@@ -3,13 +3,6 @@ import path from "path";
 
 const contactsPath = path.resolve("src", "db", "contacts.json");
 
-// contacts.js
-
-/*
- * Розкоментуй і запиши значення
- * const contactsPath = ;
- */
-
 async function listContacts() {
   // ...твій код. Повертає масив контактів.
 }
