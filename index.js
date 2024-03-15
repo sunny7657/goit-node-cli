@@ -24,23 +24,21 @@ async function invokeAction({ action, id, name, email, phone }) {
       break;
 
     case "get":
-      const contact = await getContactById(id);
-      console.log(contact);
+      const getContact = await getContactById(id);
+      console.log(getContact);
       break;
 
     case "add":
-      const addContact = await addContact(name, email, phone);
-      console.log(addContact);
+      const newContact = await addContact(name, email, phone);
+      console.log(newContact);
       break;
 
     case "remove":
-      const removeContact = await removeContact(id);
-      console.log(removeContact);
+      const removeOneContact = await removeContact(id);
+      console.log(removeOneContact);
       break;
 
     default:
       console.warn("\x1B[31m Unknown action type!");
   }
 }
-
-invokeAction({ action: "get", id: "qdggE76Jtbfd9eWJHrssH" });
