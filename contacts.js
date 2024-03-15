@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 
-const contactsPath = path.resolve("src", "db", "contacts.json");
+const contactsPath = path.resolve("db", "contacts.json");
 
 async function listContacts() {
   // ...твій код. Повертає масив контактів.
